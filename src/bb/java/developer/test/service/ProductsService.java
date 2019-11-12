@@ -52,7 +52,7 @@ public class ProductsService {
 		Response response = null;
 		try {
 			((ProductsDao) DaoCollection.getCollection().getDao(Products.class)).save(products);
-			response = Response.status(200).build();
+			response = Response.status(201).build();
 		} catch (PersistenceException e) {
 			response = Response.status(409).build();
 		}

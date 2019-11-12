@@ -110,7 +110,7 @@ class TestProductService {
 		products.getProducts().get(0).setId(id);
 
 		Response response = productService.putProducts(products);
-		assertTrue(response.getStatus() == 200, message);
+		assertTrue(response.getStatus() == 201, message);
 	}
 
 }
