@@ -24,6 +24,6 @@ Build and Run:
 
 `mvn install`
 
-`cp target/BBJavaDeveloperTest.war /path/to/tomcat'
+`cp target/BBJavaDeveloperTest.war /path/to/container`
 
 > Note: It has been tested with Tomcat 9
