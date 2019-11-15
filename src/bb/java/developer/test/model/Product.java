@@ -30,8 +30,8 @@ public class Product {
 	private Integer quantity;
 
 	/** The sale amount. */
-	@Column(nullable = false)
-	private Double sale_amount;
+	@Column(nullable = false, name = "sale_amount")
+	private Double saleAmount;
 
 	/**
 	 * Gets the id.
@@ -92,17 +92,17 @@ public class Product {
 	 *
 	 * @return the sale amount
 	 */
-	public Double getSale_amount() {
-		return sale_amount;
+	public Double getSaleAmount() {
+		return saleAmount;
 	}
 
 	/**
 	 * Sets the sale amount.
 	 *
-	 * @param sale_amount the new sale amount
+	 * @param saleAmount the new sale amount
 	 */
-	public void setSale_amount(Double sale_amount) {
-		this.sale_amount = sale_amount;
+	public void setSaleAmount(Double saleAmount) {
+		this.saleAmount = saleAmount;
 	}
 
 	/**
@@ -111,7 +111,7 @@ public class Product {
 	public void nullify() {
 		this.name = null;
 		this.quantity = null;
-		this.sale_amount = null;
+		this.saleAmount = null;
 	}
 
 }

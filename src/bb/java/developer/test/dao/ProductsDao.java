@@ -51,6 +51,7 @@ public class ProductsDao implements Dao<Products> {
 		session.beginTransaction();
 		session.save(products);
 		session.getTransaction().commit();
+		session.close();
 	}
 
 }

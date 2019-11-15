@@ -41,7 +41,7 @@ class TestProductService {
 		Product product = new Product();
 		product.setName("Some Product Name");
 		product.setQuantity(10);
-		product.setSale_amount(20.0);
+		product.setSaleAmount(20.0);
 
 		List<Product> productList = new ArrayList<>();
 		productList.add(product);
